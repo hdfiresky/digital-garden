@@ -13,15 +13,18 @@ Unlike a traditional blog, these notes are not chronological. They are organized
 
 ## How to Navigate
 
-- Use the sidebar to browse through all available notes.
 - Click on any `[[wikilink]]` within a note to jump to a related topic.
 - Check the "Backlinks" section at the bottom of each note to see which other notes refer to it.
 
-This garden is built with React and Tailwind CSS, and it's a living project. Feel free to explore!
+Feel free to explore!
 
-## Recent Explorations
+<strong>Recently updated notes</strong>
 
-- [[react]]
-- [[python]]
-- [[docker]]
-- [[clean-code]]
+<ul>
+  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+  {% for note in recent_notes limit: 5 %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
