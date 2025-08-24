@@ -5,7 +5,7 @@ id: home
 permalink: /
 ---
 
-# Welcome to My Digital Garden
+# Welcome to My Digital Garden 🌱
 
 This is a space where I cultivate my thoughts, learnings, and ideas in technology. It's a collection of interconnected notes, constantly growing and evolving.
 
@@ -28,3 +28,9 @@ Feel free to explore!
     </li>
   {% endfor %}
 </ul>
+
+<style>
+  .wrapper {
+    max-width: 46em;
+  }
+</style>
