@@ -13,7 +13,7 @@ Unlike a traditional blog, these notes are not chronological. They are organized
 
 ## How to Navigate
 
-- Click on any <p>`[[wikilink]]`</p> within a note to jump to a related topic.
+- Click on any \[\[wikilink\]\] within a note to jump to a related topic.
 - Check the "Backlinks" section at the bottom of each note to see which other notes refer to it.
 
 Feel free to explore!
