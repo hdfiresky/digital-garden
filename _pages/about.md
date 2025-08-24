@@ -1,3 +1,9 @@
+---
+layout: page
+title: About
+permalink: /about
+---
+
 # About This Garden
 
 This digital garden is a personal project by a passionate frontend engineer. It serves as a public notebook, a place to document what I'm learning, and a tool for "learning in public."
