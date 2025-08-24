@@ -1,33 +1,20 @@
----
-layout: page
-title: Home
-id: home
-permalink: /
----
+# Welcome to My Digital Garden
 
-# Welcome! 🌱
+This is a space where I cultivate my thoughts, learnings, and ideas in technology. It's a collection of interconnected notes, constantly growing and evolving.
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+Unlike a traditional blog, these notes are not chronological. They are organized by topic and linked together to form a web of knowledge. This approach, inspired by the Zettelkasten method, helps in discovering new connections and building a deeper understanding.
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+## How to Navigate
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+- Use the sidebar to browse through all available notes.
+- Click on any `[[wikilink]]` within a note to jump to a related topic.
+- Check the "Backlinks" section at the bottom of each note to see which other notes refer to it.
 
-<strong>Recently updated notes</strong>
+This garden is built with React and Tailwind CSS, and it's a living project. Feel free to explore!
 
-<ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
-    <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+## Recent Explorations
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+- [[react]]
+- [[python]]
+- [[docker]]
+- [[clean-code]]
